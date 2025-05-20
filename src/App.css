@@ -53,3 +53,22 @@
   text-align: right !important;
   cursor: pointer;
 }
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Back to original position */
+  }
+}
+
+.animated-hero {
+  animation: floatUpDown 3s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
